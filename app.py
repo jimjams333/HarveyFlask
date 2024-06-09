@@ -10,6 +10,10 @@ def index():
 def info():
     return "<h2>Harveys Flask App Info Page</h2>"
 
+@app.route('/about')
+def about():
+    return "<h2>More Updated Abount Page</h2>"
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
     
